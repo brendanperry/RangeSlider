@@ -8,7 +8,7 @@
 import SwiftUI
 import Combine
 
-struct RangeSlider: View {
+public struct RangeSlider: View {
     let lineHeight: Double
     let lineWidth: Double
     let lineCornerRadius: Double
@@ -34,7 +34,7 @@ struct RangeSlider: View {
     @State var leftSliderPosition: Double
     @State var rightSliderPosition: Double
 
-    init(lineHeight: Double,
+    public init(lineHeight: Double,
          lineWidth: Double,
          lineCornerRadius: Double,
          circleWidth: Double,
@@ -75,7 +75,7 @@ struct RangeSlider: View {
         self.rightSliderPosition = (rightValue.wrappedValue - minValue) / (maxValue - minValue) * lineWidth
     }
 
-    var body: some View {
+    public var body: some View {
         GeometryReader { geo in
             ZStack {
                 RoundedRectangle(cornerSize: CGSize(width: lineCornerRadius, height: lineCornerRadius))

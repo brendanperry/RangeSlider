@@ -7,9 +7,9 @@ let package = Package(
     name: "RangeSlider",
     platforms: [
             .iOS(.v15),
-            .tvOS(.v13),
-            .watchOS(.v5),
-            .macOS(.v13)
+            .tvOS(.v12),
+            .watchOS(.v4),
+            .macOS(.v10_13)
         ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
